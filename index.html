@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Main style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section id="to-do-list" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header">
+              <h2>My To Do List</h2>
+              <div class="input-wrapper">
+                <input type="text" id="myInput" placeholder="Add Task ..." />
+                <button
+                  onclick="addNewTask()"
+                  class="btn btn-outline-warning add-btn"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+            <ul id="list" class="list-group list-group-flush"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
